@@ -22,20 +22,13 @@ export default function HomePage() {
               <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                 Confidence.
               </span>
-            </h1>
-
-            {/* Subtitle */}
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
-              A high-precision task management system designed with clean white
-              and dark blue aesthetics. Seamlessly plan sprints, filter milestones,
-              and maintain full control over your projects.
-            </p>
+            </h1> 
 
             {/* Action Buttons */}
-            <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+            <div className="mt-8 flex justify-center">
               <Link
                 href="/tasks"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0a192f] px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-[#0a192f]/20 transition-all hover:bg-[#13284c] hover:shadow-xl active:scale-[0.99]"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0a192f] px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-[#0a192f]/20 transition-all hover:bg-[#13284c] hover:shadow-xl active:scale-[0.99]"
               >
                 <span>View Task Board</span>
                 <svg
@@ -50,25 +43,6 @@ export default function HomePage() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </Link>
-
-              <Link
-                href="/tasks"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-7 py-3.5 text-base font-semibold text-[#0a192f] shadow-sm transition-all hover:border-blue-800 hover:bg-slate-50 hover:text-blue-900 active:scale-[0.99]"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-blue-700"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span>Browse Tasks</span>
               </Link>
             </div>
           </div>

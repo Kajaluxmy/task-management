@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import NavLinks from "./nav-links";
 
 export const metadata: Metadata = {
   title: "TaskFlow | Professional Task Management System",
@@ -34,9 +35,6 @@ function AppHeader() {
                 <span className="text-lg font-bold tracking-tight text-white group-hover:text-blue-200 transition">
                   TaskFlow
                 </span>
-                <span className="rounded bg-blue-950/80 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-blue-300 border border-blue-800/60">
-                  Pro
-                </span>
               </div>
               <span className="text-[11px] font-medium text-slate-400 hidden sm:block">
                 Task Management System
@@ -45,21 +43,7 @@ function AppHeader() {
           </Link>
 
           {/* Right: Navigation Bar (Home & Tasks) */}
-          <nav className="flex items-center gap-2 sm:gap-3">
-            <Link
-              href="/"
-              className="rounded-lg px-4 py-2 text-sm font-semibold text-white/90 transition hover:bg-white/10 hover:text-white"
-            >
-              Home
-            </Link>
-
-            <Link
-              href="/tasks"
-              className="inline-flex items-center gap-1.5 rounded-lg bg-white px-4 py-2 text-sm font-bold text-[#0a192f] shadow-sm transition hover:bg-slate-100"
-            >
-              <span>Tasks</span>
-            </Link>
-          </nav>
+          <NavLinks />
         </div>
       </div>
     </header>

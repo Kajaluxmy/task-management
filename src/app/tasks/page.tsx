@@ -29,7 +29,7 @@ export default function TasksPage() {
     currentPage: 1,
     totalTasks: 0,
     totalPages: 1,
-    limit: 6,
+    limit: 10,
   });
 
   const [search, setSearch] = useState("");
@@ -51,7 +51,7 @@ export default function TasksPage() {
       const params = new URLSearchParams();
 
       params.set("page", String(page));
-      params.set("limit", "6");
+      params.set("limit", "10");
 
       if (search) {
         params.set("search", search);
