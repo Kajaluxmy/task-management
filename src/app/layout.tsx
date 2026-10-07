@@ -50,75 +50,6 @@ function AppHeader() {
   );
 }
 
-function AppFooter() {
-  return (
-    <footer className="border-t border-[#1e293b] bg-[#0a192f] text-slate-400">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          <div className="md:col-span-2 space-y-3">
-            <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 items-center justify-center rounded bg-blue-600 text-white font-bold text-xs">
-                TF
-              </div>
-              <span className="text-base font-bold text-white tracking-tight">
-                TaskFlow Management
-              </span>
-            </div>
-            <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
-              A high-performance full-stack task management system engineered with
-              Next.js, Prisma, and PostgreSQL in professional dark blue & white theme.
-            </p>
-            <div className="flex items-center gap-2 pt-1">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-950/80 px-2.5 py-0.5 text-xs font-medium text-emerald-400 border border-emerald-800/60">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                System Operational
-              </span>
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-200">
-              Navigation
-            </h3>
-            <ul className="mt-4 space-y-2.5 text-sm">
-              <li>
-                <Link href="/tasks" className="text-slate-400 hover:text-white transition">
-                  Task Board
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-200">
-              Stack
-            </h3>
-            <ul className="mt-4 space-y-2.5 text-sm">
-              <li className="flex items-center gap-2 text-slate-400">
-                <span className="text-blue-400 font-semibold">•</span> Next.js App Router
-              </li>
-              <li className="flex items-center gap-2 text-slate-400">
-                <span className="text-blue-400 font-semibold">•</span> Prisma & PostgreSQL
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="mt-8 border-t border-[#1e293b] pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>
-            &copy; {new Date().getFullYear()} TaskFlow. Professional White & Dark Blue Theme.
-          </p>
-          <div className="flex items-center gap-6">
-            <span>Fast</span>
-            <span>Reliable</span>
-            <span>Organized</span>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -129,7 +60,6 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-blue-900 selection:text-white">
         <AppHeader />
         <div className="flex-1">{children}</div>
-        <AppFooter />
       </body>
     </html>
   );
